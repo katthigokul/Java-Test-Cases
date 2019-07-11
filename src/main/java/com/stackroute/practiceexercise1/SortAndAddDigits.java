@@ -1,3 +1,5 @@
+package com.stackroute.practiceexercise1;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
