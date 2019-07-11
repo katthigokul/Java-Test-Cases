@@ -10,9 +10,9 @@ public class VowelCheck {
                 char[] inputArray = input.toCharArray();
                 for (char c : inputArray) {
                     if (Character.toLowerCase(c) == 'a' || Character.toLowerCase(c) == 'e' || Character.toLowerCase(c) == 'i' || Character.toLowerCase(c) == 'o' || Character.toLowerCase(c) == 'u') {
-                        System.out.println(c + " - vowel");
+                        System.out.println(c + " - Vowel");
                     } else {
-                        System.out.println(c + " Consonant");
+                        System.out.println(c + " -Consonant");
                     }
                 }
             } else {
