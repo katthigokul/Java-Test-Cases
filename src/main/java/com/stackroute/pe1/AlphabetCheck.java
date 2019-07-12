@@ -1,28 +1,23 @@
 package com.stackroute.pe1;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 public class AlphabetCheck
 {
-    public static void main(String args[]) throws IOException
-    {
-        char m;
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Enter any alphabet:");
-        m = (char) bf.read();
-        if(m >= 97 && m <= 123)
-        {
-            System.out.println("Lower Case");
+    public String letterChecker(char inputCharacter){
+        String letterType = "";
+        if (Character.isAlphabetic(inputCharacter)) {
+            if (Character.isUpperCase(inputCharacter)) {
+                letterType = "Capital letter";
+            } else if (Character.isLowerCase(inputCharacter)) {
+                letterType = "Lowercase letter";
+            }
         }
-        else if(m >= 65 && m <= 96)
-        {
-            System.out.println("Upper Case");
+        else if (Character.isDigit(inputCharacter)){
+            letterType = "Digit";
         }
-        else if(m >= 48 && m <= 57)
-        {
-            System.out.println("Digit");
+        else {
+            letterType = "Special symbol";
         }
+
+        return letterType;
     }
 }
