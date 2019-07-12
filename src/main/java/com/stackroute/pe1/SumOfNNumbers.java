@@ -1,25 +1,17 @@
 package com.stackroute.pe1;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 public class SumOfNNumbers {
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Enter numbers (enter any character to stop reading): ");
-        int number = 0;
-        int sum = 0;
-        while (true) {
-            try {
-                number = s.nextInt();
-                sum += number;
-                System.out.println("Sum: " + sum);
-            } catch (InputMismatchException ime) {
-                System.out.println("Please enter integers only");
-                break;
+    public int[] printer(int num){
+        int size = 0;
+        int index = 0;
+        for (int i = 1; i <= num; i++) size += i;
+        int[] resultArray = new int[size];
+        for (int i = 1; i <= num; i++){
+            for (int j = 0; j < i; j++) {
+                resultArray[index] = i;
+                index++;
             }
         }
-        /*Close the scanner*/
-        s.close();
+        return resultArray;
     }
 }
