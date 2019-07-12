@@ -53,11 +53,14 @@ local.properties
 # Intellij
 ######################
 .idea/
+
 *.iml
 *.iws
 *.ipr
 *.ids
 *.orig
+
+out/
 
 ######################
 # Visual Studio Code
