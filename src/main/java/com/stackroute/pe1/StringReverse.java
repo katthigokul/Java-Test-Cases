@@ -1,5 +1,10 @@
 package com.stackroute.pe1;
 
+/**
+ * Practice Exercise Question - 9
+ * A program to reverse any string without using String Buffer.
+ */
+
 public class StringReverse {
     public String stringReverse(String input) {
         /*Scanner s = new Scanner(System.in);
