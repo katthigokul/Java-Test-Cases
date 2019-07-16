@@ -1,4 +1,9 @@
 package com.stackroute.pe1;
+/**
+ * Practice Exercise Question - 5
+ * Class reads an unspecified number of integer arguments using Scanner Class
+ * and adds them together.
+ */
 
 public class SumOfNNumbers {
     public int[] printer(int num){
