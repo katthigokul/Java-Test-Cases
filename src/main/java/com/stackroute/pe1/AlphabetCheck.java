@@ -1,4 +1,10 @@
 package com.stackroute.pe1;
+/**
+ * Practice Exercise Question - 6
+ * Class that takes a character from the user as input and determines whether the
+ * character entered is a capital letter, a small case letter, a digit or a special symbol and display
+ * appropriately.
+ */
 
 public class AlphabetCheck
 {
